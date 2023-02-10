@@ -4,6 +4,8 @@ project(thread_queue)
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
+target_link_libraries(clog pthread)
+
 add_executable(
     thread_queue
     main.c
